@@ -11,6 +11,9 @@ module.exports = {
                 pathRewrite: {
                     '^/api': '/mock'  //该mock文件夹在public文件夹中，打包后mock文件夹会在根目录中
                 }
+            },
+            '/goods': {
+                target: 'http://localhost:3000/' 
             }
         }
     }
